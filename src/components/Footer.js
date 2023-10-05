@@ -26,20 +26,15 @@ const Footer = (props) => (
   <Wrapper style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
       created by{' '}
-      <a href="//yangerxiao.com" target="_blank">
-        tristan
+      <a href="#" target="_blank">
+        NhatNL
       </a>{' '}
-      with ❤️ &nbsp;&copy; 2020 - {new Date().getFullYear()}
+      with ❤️ &nbsp;&copy; {new Date().getFullYear()}
     </p>
     <p className="powered_by">
       Powered by
-      <a target="_blank" href="https://www.gatsbyjs.org/">
-        Gatsby.js
-      </a>
-    </p>
-    <p className="icp">
-      <a target="_blank" href="http://www.beian.miit.gov.cn/">
-        京ICP备16015459号-1
+      <a target="_blank" href="#">
+        LoveLove
       </a>
     </p>
   </Wrapper>

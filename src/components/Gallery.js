@@ -174,7 +174,7 @@ export default function Gallery({ popupDan }) {
   }
   return (
     <StyledWrapper>
-      <Title title="回忆·图库" />
+      <Title title="Photobook" />
       <div className="btns">
         <div className="group">
           <button
@@ -182,14 +182,14 @@ export default function Gallery({ popupDan }) {
             data-cate="wedding"
             onClick={handleCateClick}
           >
-            婚纱
+            Váy cưới
           </button>
           <button
             className={`btn ${cate == 'dailys' ? 'curr' : ''}`}
             data-cate="dailys"
             onClick={handleCateClick}
           >
-            日常
+            Hằng ngày
           </button>
         </div>
       </div>

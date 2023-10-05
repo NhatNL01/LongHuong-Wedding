@@ -61,7 +61,7 @@ const StyledWrapper = styled.section`
       width: 3.8rem;
       height: 3.8rem;
       .title {
-        font-family: 'SP-F';
+        font-family: 'Dancing Script', cursive;
         display: flex;
         font-size: 0.48rem;
         padding: 0.2rem 0;
@@ -128,10 +128,11 @@ export default function FirstView() {
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, {
       strings: [
-        '我们<strong>相遇</strong>',
-        '我们<strong>相知</strong>',
-        '我们<strong>相爱</strong>',
-        '我们<strong>结婚</strong>啦!'
+        'Chúng mình<strong> gặp gỡ</strong>',
+        'Chúng mình<strong> làm quen</strong>',
+        'Chúng mình<strong> tìm hiểu</strong>',
+        'Chúng mình<strong> yêu</strong>!',
+        'Chúng mình<strong> cưới</strong>!'
       ],
       typeSpeed: 200,
       backSpeed: 50,
@@ -162,17 +163,17 @@ export default function FirstView() {
       )}
       <div className="inner_wrapper">
         <div className="box">
-          {/* <div className="married">我们结婚啦</div> */}
           <div className="title">
             💕<span ref={el}></span>💕
           </div>
           <div className="date">
             <div className="countdown">
               <span className="num day">
-                {value.day}天{value.hour}小时{value.minute}分{value.second}秒
+                {-value.day} Ngày {-value.hour} giờ {-value.minute} phút{' '}
+                {-value.second} giây
               </span>
             </div>
-            <div className="time">2021.09.15</div>
+            <div className="time">10.12.2023</div>
           </div>
         </div>
       </div>

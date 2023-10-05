@@ -46,7 +46,7 @@ const StyledWrapper = styled.section`
         }
       }
       .name {
-        font-family: 'SP-F';
+        font-family: 'Dancing Script', cursive;
         font-size: 0.4rem;
         padding: 0.2rem 0;
         margin: 0.2rem 0;
@@ -60,12 +60,12 @@ const StyledWrapper = styled.section`
 `
 const tips = {
   h: {
-    m: '右面',
-    w: '左面'
+    m: 'bên phải',
+    w: 'bên trái'
   },
   v: {
-    m: '下面',
-    w: '上面'
+    m: 'bên dưới',
+    w: 'bên trên'
   }
 }
 export default function Couple({ popupDan }) {
@@ -82,24 +82,26 @@ export default function Couple({ popupDan }) {
   }
   return (
     <StyledWrapper>
-      <Title title="新郎 · 新娘" />
+      <Title title="Chú rể · Cô dâu" />
       <div className="cp">
         <div className="profile">
           <div className="pic boy" onDoubleClick={handleDC}>
             <img src={FrameImage} alt="man" />
           </div>
-          <div className="name">杨国春🤵🏻</div>
+          <div className="name">Nguyễn Hoàng Long🤵🏻</div>
           <div className="intro">
-            我有三样东西不可或缺：水，空气，以及{tips[pos].m}那个女人
+            Có ba thứ tôi không thể sống thiếu: nước, không khí và cô gái{' '}
+            {tips[pos].m}
           </div>
         </div>
         <div className="profile">
           <div className="pic girl" onDoubleClick={handleDC}>
             <img src={FrameImage} alt="man" />
           </div>
-          <div className="name">朱聪👰🏻</div>
+          <div className="name">Nguyễn Thị Thu Hường👰🏻</div>
           <div className="intro">
-            我有三样东西不可或缺：水，空气，以及{tips[pos].w}那个男人
+            Có ba thứ tôi không thể sống thiếu: nước, không khí và chàng trai{' '}
+            {tips[pos].w}
           </div>
         </div>
       </div>

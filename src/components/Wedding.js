@@ -110,19 +110,19 @@ const StyledWrapper = styled.section`
 export default function Wedding() {
   return (
     <StyledWrapper>
-      <Title title="婚礼" />
+      <Title title="Lễ cưới" />
       <div className="wrapper">
         <div className="box">
-          <h3 className="title">住宿</h3>
+          <h3 className="title">Nhà trai</h3>
           <ul className="items">
             <li className="item">
-              <span className="label">时间</span>
-              <span className="txt">2021.09.14 12:00（一晚）</span>
+              <span className="label">Thời gian</span>
+              <span className="txt">10:00 10.12.2023</span>
             </li>
             <li className="item">
-              <span className="label">地点</span>
+              <span className="label">Địa điểm</span>
               <div className="txt loc">
-                <span>山东省聊城开发区格林东方酒店</span>
+                <span>Đan Phượng - Hà Nội</span>
                 <a className="map" href={'https://j.map.baidu.com/ab/FGQJ'}>
                   <img src={Map2Image} alt="map" />
                 </a>
@@ -131,16 +131,16 @@ export default function Wedding() {
           </ul>
         </div>
         <div className="box">
-          <h3 className="title">典礼</h3>
+          <h3 className="title">Nhà gái</h3>
           <ul className="items">
             <li className="item">
-              <span className="label">时间</span>
-              <span className="txt">2021.09.15 11:00 - 14:00</span>
+              <span className="label">Thời gian</span>
+              <span className="txt">10:00 11.12.2023</span>
             </li>
             <li className="item">
-              <span className="label">地点</span>
+              <span className="label">Địa điểm</span>
               <div className="txt loc">
-                <span>山东省聊城冠县柳林镇 武风文韵小区</span>
+                <span>Tiên Yên - Quảng Ninh</span>
                 <a className="map" href={'https://j.map.baidu.com/19/OhRJ'}>
                   <img src={Map1Image} alt="map" />
                 </a>

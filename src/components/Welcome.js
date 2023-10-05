@@ -6,10 +6,12 @@ import useTimer from '../useTimer'
 
 const StyledWrapper = styled.section`
   width: 100%;
-  /* background-color: #eee; */
+  height: 300px
+  // background-color: #e2ddd4;
   padding: 0.3rem 0 1rem 0;
   .wrapper {
     width: 100%;
+    height: 500px
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +19,7 @@ const StyledWrapper = styled.section`
     .countdown {
       width: 100%;
       /* max-width: 1400px; */
-      background: linear-gradient(145deg, #ca3d27, #ca0d00);
+      background: linear-gradient(145deg, #e2ddd4, #aa7a32);
       opacity: 0.8;
       padding: 0.3rem 0;
       display: flex;
@@ -32,9 +34,9 @@ const StyledWrapper = styled.section`
         padding: 0.35rem;
         width: 1.4rem;
         height: 1.4rem;
-        border: 1px solid #ca0d00;
+        border: 1px solid #ccc;
         border-radius: 50%;
-        color: red;
+        color: #e2ddd4;
         .num {
           font-weight: 800;
           font-size: 0.8rem;
@@ -60,7 +62,7 @@ const StyledWrapper = styled.section`
     }
 
     .cele {
-      color: #212121;
+      color: #e2ddd4;
       position: absolute;
       display: flex;
       justify-content: center;
@@ -80,7 +82,7 @@ const StyledWrapper = styled.section`
       }
       .txt {
         white-space: nowrap;
-        font-family: 'SP-F';
+        font-family: 'Dancing Script', cursive;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -102,31 +104,44 @@ export default function Welcome() {
   }, [])
   return (
     <StyledWrapper>
-      <Title title="欢迎参加" />
-      <div className="wrapper">
+      <Title title="Mời bạn tham gia" />
+      <div
+        className="wrapper"
+        style={{
+          height: 500
+        }}
+      >
         <div className="countdown">
           <div className="box">
-            <span className="num day">{value.day}</span>
-            <span className="txt">天</span>
+            <span className="num day">{-value.day}</span>
+            <span className="txt">Ngày</span>
           </div>
           <div className="box">
-            <span className="num hour">{value.hour}</span>
-            <span className="txt">时</span>
+            <span className="num hour">{-value.hour}</span>
+            <span className="txt">Giờ</span>
           </div>
           <div className="box">
-            <span className="num min">{value.minute}</span>
-            <span className="txt">分</span>
+            <span className="num min">{-value.minute}</span>
+            <span className="txt">Phút</span>
           </div>
           <div className="box">
-            <span className="num second">{value.second}</span>
-            <span className="txt">秒</span>
+            <span className="num second">{-value.second}</span>
+            <span className="txt">Giây</span>
           </div>
         </div>
         <div className="cele">
           <div className="flowers">
             <Confetti gravity={0.2} numberOfPieces={150} />
           </div>
-          <div className="txt">我们结婚啦!</div>
+          <div
+            className="txt"
+            style={{
+              marginTop: 100,
+              wordWrap: true
+            }}
+          >
+            Chúng mình chuẩn bị cưới nhau!
+          </div>
         </div>
       </div>
     </StyledWrapper>

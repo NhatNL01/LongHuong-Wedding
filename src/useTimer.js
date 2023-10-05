@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import dayjs from 'dayjs'
 
-const initTime = dayjs(new Date(2021, 8, 15, 0, 0, 0))
+const initTime = dayjs(new Date(2023, 11, 10, 10, 0, 0))
 let inter = 0
 const useTimer = () => {
   const [value, setValue] = useState({
@@ -13,6 +13,7 @@ const useTimer = () => {
   const startTimer = () => {
     inter = setInterval(() => {
       const nowTime = dayjs(new Date())
+      console.log(nowTime)
       const day = nowTime.diff(initTime, 'd') //  default milliseconds
       const hour = (nowTime.diff(initTime, 'h') % 24)
         .toString()
