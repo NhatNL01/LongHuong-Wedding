@@ -15,6 +15,11 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
           rel="stylesheet"
         />
+        {/* <link
+          rel="icon"
+          href="./static/logog.png"
+          type="image/icon type"
+        ></link> */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

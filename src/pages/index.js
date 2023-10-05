@@ -10,6 +10,7 @@ import Welcome from '../components/Welcome'
 import CommonStyle from '../components/CommonStyle'
 import Footer from '../components/Footer'
 import Confetti from '../components/Confetti'
+import Donate from '../components/Donate'
 
 export default function Index() {
   const [ready, setReady] = useState(false)
@@ -37,6 +38,7 @@ export default function Index() {
       {ready && <Gallery popupDan={setDan} />}
       <Wedding />
       <Welcome />
+      <Donate popupDan={setDan} />
       <Footer />
     </>
   )
@@ -57,7 +59,7 @@ export function Head({ data }) {
   const { title, description } = data.site.siteMetadata
   return (
     <>
-      <title>{title}</title>
+      <title>Wedding</title>
       <meta name="description" content={description} />
     </>
   )

@@ -23,6 +23,7 @@ const StyledWrapper = styled.section`
   background-color: #fff;
   padding: 0.3rem 0;
   margin: auto;
+
   .wrapper {
     width: 100%;
     padding: 0;
@@ -66,6 +67,7 @@ const StyledWrapper = styled.section`
     .group {
       display: flex;
       .btn {
+        font-family: 'Dancing Script', cursive;
         background-color: #eee;
         margin: 0;
         transition: all 0.6s ease-in-out;
@@ -85,7 +87,7 @@ const StyledWrapper = styled.section`
         }
         &.curr {
           color: #fff;
-          background-color: green;
+          background-color: #aa7a32;
         }
       }
     }
@@ -135,7 +137,7 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
     }
   }, [photos])
   return reiniting ? (
-    <Loading>初始化...</Loading>
+    <Loading>Loading...</Loading>
   ) : (
     <LightGallery
       onAfterClose={handleLgClose}

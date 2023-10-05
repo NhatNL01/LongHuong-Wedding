@@ -13,6 +13,7 @@ const StyledWrapper = styled.section`
   width: 100%;
   background-color: #e2ddd4;
   padding: 0.3rem 0;
+  font-family: 'Roboto', sans-serif;
   .tl {
     display: flex;
     align-items: center;

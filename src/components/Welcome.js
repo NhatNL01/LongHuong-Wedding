@@ -62,7 +62,8 @@ const StyledWrapper = styled.section`
     }
 
     .cele {
-      color: #e2ddd4;
+      color: #e3d4b9;
+      width: 100%
       position: absolute;
       display: flex;
       justify-content: center;
@@ -136,8 +137,9 @@ export default function Welcome() {
           <div
             className="txt"
             style={{
-              marginTop: 100,
-              wordWrap: true
+              color: ' #e3d4b9',
+              marginTop: 150,
+              wordBreak: 'break-all'
             }}
           >
             Chúng mình chuẩn bị cưới nhau!
