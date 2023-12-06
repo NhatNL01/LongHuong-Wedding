@@ -94,14 +94,12 @@ const StyledWrapper = styled.section`
   }
 `
 
-const weddings = Array.from(Array(29).keys())
+const weddings = Array.from(Array(24).keys())
   .map((v, idx) => `w${idx + 1}`)
-  .filter(
-    (p) => !['w2', 'w6', 'w7', 'w13', 'w19', 'w26', 'w21', 'w10'].includes(p)
-  )
-const dailys = Array.from(Array(37).keys())
+  .filter((p) => !['w25', 'w27', 'w28', 'w29'].includes(p))
+const dailys = Array.from(Array(0).keys())
   .map((v, idx) => `d${idx + 1}`)
-  .filter((p) => !['d7', 'd12', 'd15', 'd20', 'd21'].includes(p))
+  .filter((p) => ![].includes(p))
 // console.log({ weddings })
 const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const viewCount = useRef(0)
@@ -154,10 +152,10 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
             key={photo}
             className="picture"
             data-sub-html={`<h4>${title[cate]}</h4>`}
-            data-src={`https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_1200`}
+            data-src={`https://res.cloudinary.com/dizzfltgh/image/upload/v1701839307/${photo}.jpg`}
           >
             <img
-              src={`https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_300`}
+              src={`https://res.cloudinary.com/dizzfltgh/image/upload/v1701839307/${photo}.jpg`}
             />
           </div>
         )
@@ -186,13 +184,13 @@ export default function Gallery({ popupDan }) {
           >
             Váy cưới
           </button>
-          <button
+          {/* <button
             className={`btn ${cate == 'dailys' ? 'curr' : ''}`}
             data-cate="dailys"
             onClick={handleCateClick}
           >
             Hằng ngày
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="wrapper">

@@ -31,13 +31,13 @@ const StyledWrapper = styled.section`
         background-position: center;
         overflow: hidden;
         &.boy {
-          background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w4.png?x-oss-process=image/resize,w_400'),
+          background-image: url('https://res.cloudinary.com/dizzfltgh/image/upload/v1701843417/long_i5slrc.jpg'),
             url(${FrameImage});
-          background-size: 75%, 100%;
-          background-position-y: 5px;
+          background-size: 85%, 100%;
+          background-position-y: 25px;
         }
         &.girl {
-          background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w1.png?x-oss-process=image/resize,w_400'),
+          background-image: url('https://res.cloudinary.com/dizzfltgh/image/upload/v1701843258/huong.jpg'),
             url(${FrameImage});
         }
         img {

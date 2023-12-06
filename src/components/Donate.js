@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Title from './SectionTitle'
 import FrameImage from '../assets/imgs/frame.png'
 import QrImage from '../assets/imgs/qr.png'
+import QrImageLong from '../assets/imgs/qr-long.png'
+import QrImageHuong from '../assets/imgs/qr-huong.png'
 
 const StyledWrapper = styled.section`
   width: 100%;
@@ -33,13 +35,13 @@ const StyledWrapper = styled.section`
         overflow: hidden;
         &.boy {
           background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w4.png?x-oss-process=image/resize,w_400'),
-            url(${QrImage});
+            url(${QrImageLong});
           background-size: 75%, 100%;
           background-position-y: 5px;
         }
         &.girl {
           background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w1.png?x-oss-process=image/resize,w_400'),
-            url(${QrImage});
+            url(${QrImageHuong});
         }
         img {
           width: 100%;
@@ -87,17 +89,17 @@ export default function Donate({ popupDan }) {
       <div className="cp">
         <div className="profile">
           <div className="pic boy" onDoubleClick={handleDC}>
-            <img src={QrImage} alt="man" />
+            <img src={QrImageLong} alt="man" />
           </div>
           <div className="name">Nguyễn Hoàng Long🤵🏻</div>
-          <div className="intro">Techcombank: 1900 6434 234 435</div>
+          <div className="intro">VPBank: 218 878 547</div>
         </div>
         <div className="profile">
           <div className="pic girl" onDoubleClick={handleDC}>
-            <img src={QrImage} alt="man" />
+            <img src={QrImageHuong} alt="man" />
           </div>
           <div className="name">Nguyễn Thị Thu Hường👰🏻</div>
-          <div className="intro">Techcombank: 1900 6434 234 435</div>
+          <div className="intro">Techcombank: 1903 6562 3880 15</div>
         </div>
       </div>
     </StyledWrapper>

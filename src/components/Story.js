@@ -102,42 +102,22 @@ const prefix =
   'https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/story.'
 const items = [
   {
-    title: 'Phần 1: Tôi yêu',
-    datetime: '2022.05.06',
-    desc: `<span>“As he read, I fell in love the way you fall asleep: slowly, and then all at once.” – John Green. 
-    </span><span>“Loved you yesterday, love you still, always have, always will. ” – Elaine Davis</span>
-    <span>“I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more.” – Angelita Lim. </span>`,
-    picture: `${prefix}first.jpg?x-oss-process=image/resize,w_300`
+    title: 'Phần 1: Gặp gỡ',
+    datetime: '01.10.2021',
+    desc: `<span> Lần đầu tiên gặp nhau vào một  ngày tháng 10 năm 2021 tại thành phố Uông Bí xinh đẹp, chúng mình đã có cơ hội gặp gỡ, làm việc, nói chuyện và biết nhau từ đó.</span>`,
+    picture: `https://res.cloudinary.com/dizzfltgh/image/upload/c_scale,w_500/v1701839146/str-1_ywfxj5.jpg`
   },
   {
-    title: 'Phần 2: Bạn yêu',
-    datetime: '2022.09.23',
-    desc: `<span>“As he read, I fell in love the way you fall asleep: slowly, and then all at once.” – John Green. </span>
-    <span>“I love you not only for what you are, but for what I am when I am with you. I love you not only for what you have made of yourself, but for what you are making of me. I love you for the part of me that you bring out.” – Elizabeth Barrett Browning. </span>
-    <span>“The real lover is a man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.” – Marilyn Monroe. </span>
-    <span>“In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.” – Maya Angelou. </span>
-    <span>“I’ll be loving you, always with a love that’s true” – Patsy Cline. </span>
-    <span>“Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me alive.” – Unknown. </span>
-    <span>“I need you like a heart needs a beat.” – One Republic. </span>
-    <span>“If I know what love is, it is because of you.” – Hermann Hesse. </span>
-    <span>“I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.” – Leo Christopher. </span>
-    <span>“Take my hand, take my whole life too. For I can’t help falling in love with you.” – Elvis Presley </span>`,
-    picture: `${prefix}bws.png?x-oss-process=image/resize,w_300`
+    title: 'Phần 2: Yêu',
+    datetime: '10.03.2022',
+    desc: `<span>Sau thời gian biết đến nhau và xa cách, chỉ tương tác online, vào một dịp đặc biệt và bằng  một cách thần kì, chúng mình gặp lại nhau một lần nữa tại Tp Uông  Bí và chính thức bên nhau.</span>`,
+    picture: `https://res.cloudinary.com/dizzfltgh/image/upload/c_scale,w_500/v1701839254/str-2.jpg`
   },
   {
-    title: 'Phần 3: Chúng ta yêu',
-    datetime: '2020.06.06',
-    desc: `<span>“As he read, I fell in love the way you fall asleep: slowly, and then all at once.” – John Green. </span>
-    <span>“I love you not only for what you are, but for what I am when I am with you. I love you not only for what you have made of yourself, but for what you are making of me. I love you for the part of me that you bring out.” – Elizabeth Barrett Browning. </span>
-    <span>“The real lover is a man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.” – Marilyn Monroe. </span>
-    <span>“In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.” – Maya Angelou. </span>
-    <span>“I’ll be loving you, always with a love that’s true” – Patsy Cline. </span>
-    <span>“Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me alive.” – Unknown. </span>
-    <span>“I need you like a heart needs a beat.” – One Republic. </span>
-    <span>“If I know what love is, it is because of you.” – Hermann Hesse. </span>
-    <span>“I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.” – Leo Christopher. </span>
-    <span>“Take my hand, take my whole life too. For I can’t help falling in love with you.” – Elvis Presley </span>`,
-    picture: `${prefix}banjia.jpg?x-oss-process=image/resize,w_300`
+    title: 'Phần 3: Cưới',
+    datetime: '24.12.2023',
+    desc: `<span>Sau những câu chuyện vui buồn có nhau, và luôn mồm câu:“ Anh chưa thấy ai điên như em”, tháng 12 này chúng mình quyết định về chung một nhà.</span>`,
+    picture: `https://res.cloudinary.com/dizzfltgh/image/upload/c_scale,w_500/v1701839476/str-3.jpg`
   }
 ]
 function createMarkup(html) {

@@ -27,7 +27,7 @@ const StyledWrapper = styled.section`
     max-width: 2200px;
     margin: auto;
     height: 100vh;
-    background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w12.png?x-oss-process=image/resize,w_2500');
+    background-image: url('https://res.cloudinary.com/dizzfltgh/image/upload/v1701843074/fw-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -173,7 +173,7 @@ export default function FirstView() {
                 {-value.second} giây
               </span>
             </div>
-            <div className="time">10.12.2023</div>
+            <div className="time">18.12.2023</div>
           </div>
         </div>
       </div>

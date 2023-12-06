@@ -68,10 +68,10 @@ const StyledWrapper = styled.section`
           display: flex;
           align-items: flex-start;
           margin: 0.1rem 0;
-
           .label {
             color: #ccc;
             white-space: nowrap;
+            word-break: break-all;
             &:after {
               content: '：';
             }
@@ -115,48 +115,72 @@ export default function Wedding() {
       <Title title="Lễ cưới" />
       <div className="wrapper">
         <div className="box">
-          <h3 className="title">Nhà trai</h3>
+          <h3 className="title">Nhà gái</h3>
           <ul className="items">
             <li className="item">
               <span className="label">Thời gian</span>
-              <span className="txt">10:00 10.12.2023</span>
+              <span className="txt">10:00 18.12.2023</span>
             </li>
             <li className="item">
               <span className="label">Địa điểm</span>
               <div className="txt loc">
-                <span>Đan Phượng - Hà Nội</span>
+                <span>Lâm Thành - Hải Lạng - Tiên Yên - Quảng Ninh</span>
                 <a
                   className="map"
                   href={
-                    'https://www.google.com/maps/place/3JMX%2B7QV,+%C4%90%E1%BB%93ng+Th%C3%A1p,+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0831272,105.6505076,18z/data=!4m9!1m2!2m1!1zc-G7kSA2MiBiw6NpIHRo4buleSDEkeG7k25nIHRow6FwIMSRYW4gcGh14buNbmc!3m5!1s0x31345651c8f34cf5:0xd0d1b2e144abfee!8m2!3d21.0832003!4d105.6493974!16s%2Fg%2F11j0vwg00b?entry=ttu'
+                    'https://www.google.com/maps/search/L%C3%A2m+Th%C3%A0nh++H%E1%BA%A3i+L%E1%BA%A1ng++Ti%C3%AAn+Y%C3%AAn++Qu%E1%BA%A3ng+Ninh/@21.3144792,107.3589451,18z?entry=ttu'
                   }
                 >
                   <img src={MapTraiImage} alt="map" />
                 </a>
               </div>
+              {/* <div className="txt loc">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1858.4561775229965!2d107.35894514776037!3d21.314479246495047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314b1f74c4d95e83%3A0xf73140bc020ac5b5!2zTmjDoCB2xINuIGhvw6EgdGjDtG4gTMOibSBUaMOgbmg!5e0!3m2!1svi!2s!4v1701835956349!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div> */}
             </li>
           </ul>
         </div>
         <div className="box">
-          <h3 className="title">Nhà gái</h3>
+          <h3 className="title">Nhà trai</h3>
           <ul className="items">
             <li className="item">
               <span className="label">Thời gian</span>
-              <span className="txt">10:00 11.12.2023</span>
+              <span className="txt">11:00 24.12.2023</span>
             </li>
             <li className="item">
               <span className="label">Địa điểm</span>
               <div className="txt loc">
-                <span>Tiên Yên - Quảng Ninh</span>
+                <span>
+                  Số 62 - Đường 2 - Bãi Thụy - Đồng Tháp - Đan Phượng - Hà Nội
+                </span>
                 <a
                   className="map"
                   href={
-                    'https://www.google.com/maps/place/tt.+Ti%C3%AAn+Y%C3%AAn,+Ti%C3%AAn+Y%C3%AAn,+Qu%E1%BA%A3ng+Ninh,+Vi%E1%BB%87t+Nam/@21.3312025,107.3725923,15z/data=!3m1!4b1!4m10!1m2!2m1!1zdGhhzIBuaCBwaMO0zIEgVGnDqm4gWcOqbiwgUXXhuqNuZyBOaW5o!3m6!1s0x314b2211b3d65689:0xcc36f4d8c83bd9e7!8m2!3d21.3347973!4d107.3937536!15sCid0aGHMgG5oIHBow7TMgSBUacOqbiBZw6puLCBRdeG6o25nIE5pbmiSAQxzdWJsb2NhbGl0eTHgAQA!16s%2Fg%2F11h1trtfz?entry=ttu'
+                    'https://www.google.com/maps/place/62+%C4%90%C6%B0%E1%BB%9Dng+2+B%C3%A3i+Th%E1%BB%A5y,+%C4%90%E1%BB%93ng+Th%C3%A1p,+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0823228,105.6465705,17z/data=!3m1!4b1!4m6!3m5!1s0x31345651bad78f07:0x654034b0802c3151!8m2!3d21.0823178!4d105.6491454!16s%2Fg%2F11kzkf03ss?entry=ttu'
                   }
                 >
                   <img src={MapGaiImage} alt="map" />
                 </a>
               </div>
+              {/* <div className="txt loc">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.758070155192!2d105.64657047599945!3d21.082322785935233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345651bad78f07%3A0x654034b0802c3151!2zNjIgxJDGsOG7nW5nIDIgQsOjaSBUaOG7pXksIMSQ4buTbmcgVGjDoXAsIMSQYW4gUGjGsOG7o25nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1701835856508!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div> */}
             </li>
           </ul>
         </div>
