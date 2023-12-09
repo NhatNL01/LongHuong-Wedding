@@ -82,6 +82,9 @@ const StyledWrapper = styled.section`
             &.loc {
               display: flex;
               flex-direction: column;
+              .p {
+                word-break: break-all;
+              }
               .map {
                 margin-top: 0.12rem;
                 width: 2.4rem;
@@ -124,15 +127,16 @@ export default function Wedding() {
             <li className="item">
               <span className="label">Địa điểm</span>
               <div className="txt loc">
-                <span>Lâm Thành - Hải Lạng - Tiên Yên - Quảng Ninh</span>
-                <a
+                <p>Lâm Thành - Hải Lạng</p>
+                <p style={{ marginTop: 10 }}>Tiên Yên - Quảng Ninh</p>
+                {/* <a
                   className="map"
                   href={
                     'https://www.google.com/maps/search/L%C3%A2m+Th%C3%A0nh++H%E1%BA%A3i+L%E1%BA%A1ng++Ti%C3%AAn+Y%C3%AAn++Qu%E1%BA%A3ng+Ninh/@21.3144792,107.3589451,18z?entry=ttu'
                   }
                 >
                   <img src={MapTraiImage} alt="map" />
-                </a>
+                </a> */}
               </div>
               {/* <div className="txt loc">
                 <iframe
@@ -158,17 +162,16 @@ export default function Wedding() {
             <li className="item">
               <span className="label">Địa điểm</span>
               <div className="txt loc">
-                <span>
-                  Số 62 - Đường 2 - Bãi Thụy - Đồng Tháp - Đan Phượng - Hà Nội
-                </span>
-                <a
+                <p>Số 62 - Đường 2 - Bãi Thụy</p>
+                <p style={{ marginTop: 10 }}>Đồng Tháp - Đan Phượng - Hà Nội</p>
+                {/* <a
                   className="map"
                   href={
                     'https://www.google.com/maps/place/62+%C4%90%C6%B0%E1%BB%9Dng+2+B%C3%A3i+Th%E1%BB%A5y,+%C4%90%E1%BB%93ng+Th%C3%A1p,+%C4%90an+Ph%C6%B0%E1%BB%A3ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0823228,105.6465705,17z/data=!3m1!4b1!4m6!3m5!1s0x31345651bad78f07:0x654034b0802c3151!8m2!3d21.0823178!4d105.6491454!16s%2Fg%2F11kzkf03ss?entry=ttu'
                   }
                 >
                   <img src={MapGaiImage} alt="map" />
-                </a>
+                </a> */}
               </div>
               {/* <div className="txt loc">
                 <iframe
