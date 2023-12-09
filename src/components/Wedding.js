@@ -29,12 +29,12 @@ const StyledWrapper = styled.section`
       flex-direction: column;
     }
     .box {
-      min-height: 4.4rem;
+      min-height: 2rem;
       width: 4rem;
       background-color: rgba(2, 2, 2, 0.5);
       z-index: 9;
       color: #fff;
-      padding: 0.25rem 0.5rem;
+      padding: 0.65rem 0.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
