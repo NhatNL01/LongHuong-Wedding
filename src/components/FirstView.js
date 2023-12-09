@@ -173,7 +173,7 @@ export default function FirstView() {
                 {-value.second} giây
               </span>
             </div>
-            <div className="time">18.12.2023</div>
+            <div className="time">24.12.2023</div>
           </div>
         </div>
       </div>
