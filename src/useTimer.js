@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import dayjs from 'dayjs'
 
-const initTime = dayjs(new Date(2023, 11, 18, 10, 0, 0))
+const initTime = dayjs(new Date(2023, 11, 24, 11, 0, 0))
 let inter = 0
 const useTimer = () => {
   const [value, setValue] = useState({
